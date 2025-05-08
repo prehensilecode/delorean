@@ -33,3 +33,6 @@ _build
 
 # IDE
 .idea
+
+# mypy
+.mypy_cache/
