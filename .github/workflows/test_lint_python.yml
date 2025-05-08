@@ -15,12 +15,12 @@ jobs:
       - run: poetry run bandit --recursive --skip B101 delorean || true  # B101 is assert statements
       - run: poetry run black --check delorean || true
       - run: poetry run codespell delorean || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock"
-      - run: poetry run flake8 delorean --count --select=E9,F63,F7,F82 --show-source --statistics || true
+      - run: poetry run flake8 delorean --count --select=E9,F63,F7,F82 --show-source --statistics
       - run: poetry run flake8 delorean --count --exit-zero --max-complexity=10 --max-line-length=88
                       --show-source --statistics || true
       - run: poetry run isort --check-only --profile black delorean || true
       - run: mkdir --parents --verbose .mypy_cache
-      - run: poetry run mypy --ignore-missing-imports --install-types --non-interactive --exclude ./docs/ delorean || true
+      - run: poetry run mypy --ignore-missing-imports --install-types --non-interactive --exclude ./docs/ delorean
       - run: poetry run pytest tests/delorean_tests.py 
       - run: poetry run pytest --doctest-modules
       - run: poetry run nosetests --with-coverage --cover-package=delorean
