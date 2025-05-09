@@ -40,9 +40,7 @@ include = [
     { path = "tests", format = "sdist" },
     { path = "CHANGES.rst", format = "sdist" },
     { path = "requirements.in", format = "sdist" },
-    { path = "requirements.txt", format = "sdist" },
     { path = "dev-requirements.in", format = "sdist" },
-    { path = "dev-requirements.txt", format = "sdist" },
     { path = "Makefile", format = "sdist" },
     { path = "docs", format = "sdist" },
 ]
