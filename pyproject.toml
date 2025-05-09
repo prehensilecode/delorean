@@ -39,6 +39,7 @@ documentation = "https://delorean.readthedocs.io/"
 include = [
     { path = "tests", format = "sdist" },
     { path = "CHANGES.rst", format = "sdist" },
+    { path = "LICENSE.txt", format = "sdist" },
     { path = "Makefile", format = "sdist" },
     { path = "docs", format = "sdist" },
 ]
